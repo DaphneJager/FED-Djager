@@ -16,13 +16,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Daphne Jager
 
   #### Je startniveau:
-  hier je startniveau (kies uit zwart, rood óf blauw)
+  BLAUW
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  surface plane
  
 </details>
 
@@ -36,14 +36,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
+  https://bleachedrenaissance.nl/ 
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Bleached renaissance Home
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
+  Bleached renaissance Collections - 1 specifiek product pagina
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
@@ -57,6 +57,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  - bij de taal/geld werd deze 2 keer voorgelezen
+  - logo heeft een goeie duidelijke alt text
+  - website loopt vast als je wilt scrollen tijdens het readen, weet niet of het komt door de site of de reader.
+  - de lijst wordt goed voorgelezen met 1/4 tot 4/4 
+  - leest sommige dingen die niet zichtbaar zijn
+  - als er fotos zijn met onderetiteling wordt er geen alt text bij de foto gegeven.
 
 </details>
 
