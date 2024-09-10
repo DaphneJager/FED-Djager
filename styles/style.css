@@ -27,5 +27,8 @@
 /* JOUW STYLING */
 /****************/
 
-/* jouw code */
+section img {
+	max-width: 2em;
+	max-height: 2em;
+}
 
