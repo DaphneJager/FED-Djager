@@ -36,10 +36,7 @@ img {
 	max-height: 100vw;
 }
 
-nav li {
+li {
 	list-style: none;
- }
+}
 
- footer li {
-	list-style: none;
- }
