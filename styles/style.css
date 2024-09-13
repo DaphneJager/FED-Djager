@@ -36,6 +36,6 @@ img {
 	max-height: 100vw;
 }
 
-nav {
-	list-style-type: none;
+nav li {
+	list-style: none;
  }
