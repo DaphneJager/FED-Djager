@@ -94,7 +94,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Ik had een beetje een hectische week, waardoor het wat lastiger was om goed door te werken en af te maken. 
+  Maar uiteindelijk is het wel gelukt om te beginnen.
+  De opbouw ging eigenlijk wel goed en makkelijk. Alleen de text kon ik niet kopieren dus ik heb alles
+  over moeten typen helaas. Ik twijfelde over of ik de sections goed heb gebruikt. 
 
 
   ### Agenda voor meeting
