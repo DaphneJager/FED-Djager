@@ -46,6 +46,7 @@ img {
 }
 
 /*HEADER*/
+
 header {
 	display: flex;
 	flex-direction: column;
@@ -53,35 +54,88 @@ header {
 	padding-top: 20px;
 }
 
-nav img:nth-of-type(1) {
-	max-height: 2em;
-	max-width: 2em;
+header a {
+	text-decoration: none;
+	color: var(--color-text);
+	justify-content: center;
 }
 
-nav img:nth-of-type(2) {
-	max-height: 2em;
-	max-width: 2em;
+
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly
 }
 
-nav img:nth-of-type(3) {
-	max-width: 8em;
+.navigatie {
+	display: flex;
+	justify-content: center;
+	padding: 20px 0px 20px 0px;
+}
+
+nav ul:nth-of-type(1) {
+	display: flex;
+}
+
+nav ul:nth-of-type(2) {
+	display: flex;
+}
+
+nav ul:nth-of-type(3) {
+	display: flex;
+}
+
+/* navigatie */
+header a:nth-of-type(1) {
+	padding-right: 20px;
+}
+
+header a:nth-of-type(2) {
+	padding-right: 20px;
+}
+
+header a:nth-of-type(3) {
+	padding-right: 20px;
+}
+
+header a:nth-of-type(4) {
+	padding-right: 20px;
+}
+
+
+/* hamburger */
+/* nav img:nth-of-type(1) {
+	max-height: 2em;
+	max-width: 2em;
+} */
+
+/* geld */
+/* nav img:nth-of-type(2) {
 	max-height: 8em;
-}
+	max-width: 8em;
+} */
 
-nav img:nth-of-type(4) {
+/* mandje */
+/* nav img:nth-of-type(3) {
+	max-width: 2em;
+	max-height: 2em;
+} */
+
+/* nav img:nth-of-type(4) {
 	max-height: 2em;
 	max-width: 2em;
-}
+} */
 
-nav img:nth-of-type(5) {
+/* nav img:nth-of-type(5) {
 	max-height: 10em;
 	max-width: 10em;
-}
+} */
 
-nav img:nth-of-type(6) {
+/* nav img:nth-of-type(6) {
 	max-height: 2em;
 	max-width: 2em;
-}
+} */
 
 p:nth-of-type(1) {
 	text-align: center;
@@ -94,27 +148,62 @@ nav a {
 	justify-content: center;
 }
 
+.links img {
+	max-height: 2em;
+	max-width: 2em;
+}
+
+.logo {
+	max-height: 8em;
+	max-width: 8em;
+}
+
+.rechts {
+	display: flex;
+	flex-direction: row;
+}
+
+.zoekloop2 {
+	max-height: 2em;
+	max-width: 2em;
+}
 
 
-@media (max-width: 988px) {
-	nav ul{display: none;}
+header img:nth-of-type(2) {
+	max-height: 10em;
+	max-width: 10em;
+}
+
+header img:nth-of-type(3) {
+	max-height: 2em;
+	max-width: 2em;
+}
+
+/* DARK MODE filter: invert(100%)
+of brightness(0) */
+
+
+
+
+
+@media (min-width: 988px) {
+	.zoekloop2 {display: none;}
 }
 
 @media (min-width: 988px) {
-	nav img:nth-of-type(1) {display: none;}
+	.hamburger {display: none;}
 }
 
 @media (max-width: 988px) {
-	nav img:nth-of-type(2) {display: none;}
+	.geld {display: none;}
 }
 
 @media (max-width: 988px) {
-	nav img:nth-of-type(5) {display: none}
-
+	.zoekloop {display: none}
 }
 
-@media (min-width: 988px) {
-	nav img:nth-of-type(4) {display: none;}
+@media (max-width: 988px) {
+	.navigatie {display: none;}
 }
 
 
@@ -178,9 +267,68 @@ nav a {
 }
 
 
-/* CARROUSEL */
+/* CARROUSEL bron: https://blog.hubspot.com/website/bootstrap-carousel-css*/
 
-img:nth-of-type(8){
-	max-height: 50px;
+section:nth-of-type(4) {
+	font-size: 25px;
+	margin: 30px 80px 30px 20px;
 }
 
+.caroussel {
+	display: flex;
+	overflow-x: auto;
+	overflow-x: auto;
+	
+}
+
+.caroussel article {
+	display: flex;
+	flex-shrink: 0;
+	width: fit-content;
+	height: 800px;
+	scroll-snap-align: start;
+	scroll-behavior: smooth;
+	justify-content: center;
+	align-items: center;
+	scroll-snap-type: x mandatory;
+	text-align: left;
+	
+}
+
+.caroussel article:nth-of-type(1) {
+	display: flex;
+	flex-direction: column;
+	background-color: lightgrey;
+	margin: 20px 20px 20px 20px;
+}
+
+.caroussel article:nth-of-type(2) {
+	display: flex;
+	flex-direction: column;
+	background-color: lightgrey;
+	margin: 20px 20px 20px 20px;
+}
+
+.caroussel img:nth-of-type(1) {
+	max-height: 80%;
+	max-width: 80%;
+	align-items: left;
+	margin: 20px 20px 20px 20px;
+}
+
+.caroussel h3 {
+	font-size: 30px;
+	line-height: 20px;
+}
+
+.caroussel p {
+	font-size: 15px;
+	line-height: 20px;
+	margin: 20px 20px 20px 20px;
+}
+
+
+/* COLLECTIONS */
+section:nth-of-type(6){
+	margin: 20px 20px 20px 20px;
+}
