@@ -48,11 +48,9 @@ img {
 /*HEADER*/
 header {
 	display: flex;
-	flex-direction: row;
-	grid-template-columns: 1fr 2fr 1fr;
-	align-items: center;
-	padding: 10px 3rem 10px 3rem;
-	position: sticky;
+	flex-direction: column;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
 
 nav img:nth-of-type(1) {
@@ -61,11 +59,26 @@ nav img:nth-of-type(1) {
 }
 
 nav img:nth-of-type(2) {
+	max-height: 2em;
+	max-width: 2em;
+}
+
+nav img:nth-of-type(3) {
 	max-width: 8em;
 	max-height: 8em;
 }
 
-nav img:nth-of-type(3) {
+nav img:nth-of-type(4) {
+	max-height: 2em;
+	max-width: 2em;
+}
+
+nav img:nth-of-type(5) {
+	max-height: 10em;
+	max-width: 10em;
+}
+
+nav img:nth-of-type(6) {
 	max-height: 2em;
 	max-width: 2em;
 }
@@ -75,12 +88,33 @@ p:nth-of-type(1) {
 	padding-top: 20px;
 }
 
+nav a {
+	text-decoration: none;
+	color: var(--color-text);
+	justify-content: center;
+}
+
+
+
 @media (max-width: 988px) {
-	ul{visibility: hidden; }
+	nav ul{display: none;}
 }
 
 @media (min-width: 988px) {
-	nav img:nth-of-type(1) {visibility: hidden; }
+	nav img:nth-of-type(1) {display: none;}
+}
+
+@media (max-width: 988px) {
+	nav img:nth-of-type(2) {display: none;}
+}
+
+@media (max-width: 988px) {
+	nav img:nth-of-type(5) {display: none}
+
+}
+
+@media (min-width: 988px) {
+	nav img:nth-of-type(4) {display: none;}
 }
 
 
@@ -92,35 +126,13 @@ p:nth-of-type(1) {
 	background-size: cover;
 	text-align: center;
 	padding-top: 20%;
-	color: white;
+	color: var(--color-background);
 	font-size: 1.5em;
 }
 
 .maintext {
 	margin-bottom: 50px;
 }
-
-/* KNOPPEN */
-.knop1 {
-	border: solid white;
-	background-color: white;
-	text-decoration: none;
-	padding: 15px 50px 15px 50px;
-	font-size: large;
-	color: black;
-}
-
-.knop2 {
-	border: solid white;
-	background-color: white;
-	text-decoration: none;
-	font-size: large;
-	padding: 15px 50px 15px 50px;
-	color: black;
-}
-
-
-
 
 /*2e foto*/
 /*bron voor parralax: https://www.w3schools.com/howto/howto_css_parallax.asp*/
@@ -130,10 +142,45 @@ p:nth-of-type(1) {
 	background-size: cover;
 	height: 40vh;
 	text-align: center;
-	padding-top: 30%;
-	color: white;
-	font-size: 2em;
+	padding-top: 20%;
+	color: var(--color-background);
 	font-family: 'Times New Roman', Times, serif;
 	background-position: center;
 	background-attachment: fixed;
 }
+
+.stickimage h2 {
+	font-size: 2em;
+}
+
+.stickimage p {
+	font-size: 1em;
+	margin-bottom: 50px;
+}
+
+/* KNOPPEN */
+.knop1 {
+	border: solid var(--color-background);
+	background-color: var(--color-background);
+	text-decoration: none;
+	padding: 15px 50px 15px 50px;
+	font-size: large;
+	color: var(--color-text);
+}
+
+.knop2 {
+	border: solid var(--color-background);
+	background-color: var(--color-background);
+	text-decoration: none;
+	font-size: large;
+	padding: 15px 50px 15px 50px;
+	color: var(--color-text);
+}
+
+
+/* CARROUSEL */
+
+img:nth-of-type(8){
+	max-height: 50px;
+}
+
