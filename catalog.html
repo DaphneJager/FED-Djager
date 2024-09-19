@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,73 @@
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
 </head>
+
 <body>
     <section>
-        <p>Art. Not just clothing.</p>
-    </section>
-    <header>
-		<img src="images/official.logo.png" alt="Bleached Renaissance logo, een B en een R. Met daaronder de tekst
-		Bleached Renaissance en art, not just clothing.">
+		<p>Art. Not just clothing.</p>
+	</section>
+	<header>
 		<nav>
-			<input type="Search">
-			<ul>
+
+			<div class="container" onclick="myFunction(this)">
+				<div class="bar1"></div>
+				<div class="bar2"></div>
+				<div class="bar3"></div>
+			</div>
+
+			<ul class="links"> 
 				<li>
-					<a href="">Home</a>
-					<a href="">Catalog</a>
-					<a href="">Collections</a>
-					<a href="">Visit</a>
+					<img src="images/zoekloop.png" alt="zoekbalk" class="zoekloop">
+				</li>
+			</ul>
+
+			<ul class="logo">
+				<li>
+					<img src="images/official.logo.png" alt="Bleached Renaissance logo, een B en een R. Met daaronder de tekst
+					Bleached Renaissance en art, not just clothing.">
+				</li>
+			</ul>
+			
+
+			<ul class="rechts">
+				<li>
+					<img src="images/zoekloop.png" alt="zoekbalk" class="zoekloop2">
+					<img src="images/geld.png" alt="land en munteenheid instellen" class="geld">
+				</li>
+			</ul>
+
+			<ul class="rechts">
+				<li>
+					<img src="images/winkelmandje.png" alt="winkelmandje" class="mandje">
 				</li>
 			</ul>
 		</nav>
+		<ul class="navigatie">
+			<li>
+				<a href="">Home</a>
+				<a href="">Catalog</a>
+				<a href="">Collections</a>
+				<a href="">Visit</a>
+			</li>
+		</ul>
 	</header>
 
-    <section>
-        <img src="images/jacketachterkant.jpg" alt="Foto van de voorkant een jas met verschillende gebleekte vormen">
-        <img src="images/jacketachterkant.jpg" alt="Foto van de achterkant een jas met verschillende gebleekte vormen">
-        <img src="images/closeupjacket.png" alt="Close up foto van de voorkant een jas met verschillende gebleekte vormen">
-    </section>
 
-    <section>
+	<section class="caroussel3">
+		<section>
+			<img src="images/jacketvoorkant.jpg" alt="Voorkant van denim jas met laser design">
+		</section>
+
+		<section>
+			<img src="images/jacketachterkant.jpg" alt="Achterkant van denim jas met laser design">
+		</section>
+
+		<section>
+			<img src="images/closeupjacket.png" alt="Close up van voorkant van denim jas met laser design">
+		</section>
+	</section>
+
+    <section class="catalogpage">
         <p>Bleached Renaissance</p>
         <h1>The Lasered Jacket</h1>
         <h2>€195,00 EUR</h2>
@@ -60,7 +101,7 @@
         <button>XXL (shoulder: 54.5cm | Length: 74cm)</button>
     </section>
     
-    <section>
+    <section class="bovenfooter">
 		<h2>Subscribe to our emails</h2>
 		<p>Be the first to know about new collections and exclusive offers</p>
 		<input type="Email">
@@ -76,21 +117,22 @@
 		<input type="Email">
 	</section>
 
+	
 	<footer>
 		<p>country/region</p>
-		<input type="Netherlands | EUR €">
+		<img src="images/geld.png" alt="betaalmethodes">
 		<img src="images/logo.betalen.png" alt="Alle bruikbare betaalmiddelen. American Express, Apple pay, 
 		Google Pay, IDEAL, Mastercard, Maestro, Paypal, Shopify, Visa">
 		<ul>
 			<li>
-				<p>2024</p>
-				<a href="">Bleached Renaissance Powered by Shopify</a>
-				<a href="">Refund policy</a>
-				<a href="">Privacy policy</a>
-				<a href="">Terms of service</a>
-				<a href="">Shipping policy</a>
-				<a href="">Contact information</a>
-				<a href="">Legal notice</a>
+				<a href="#">©2024</a>
+				<a href="#">Bleached Renaissance Powered by Shopify</a>
+				<a href="#">Refund policy</a>
+				<a href="#">Privacy policy</a>
+				<a href="#">Terms of service</a>
+				<a href="#">Shipping policy</a>
+				<a href="#">Contact information</a>
+				<a href="#">Legal notice</a>
 			</li>
 		</ul>
 	</footer>
