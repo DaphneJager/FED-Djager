@@ -38,18 +38,16 @@ li {
 	list-style: none;
 }
 
-img {
+/* img {
 	width: 100%;
 	height: auto;
-}
+} */
 
 /*HEADER*/
 
 header {
 	display: flex;
 	flex-direction: column;
-	padding-bottom: 20px;
-	padding-top: 20px;
 }
 
 header a {
@@ -61,7 +59,7 @@ header a {
 nav {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .navigatie {
@@ -70,22 +68,9 @@ nav {
 	padding: 20px 0px 20px 0px;
 }
 
-nav ul:nth-of-type(1) {
-	display: flex;
-}
 
-nav ul:nth-of-type(2) {
-	display: flex;
-}
-
-nav ul:nth-of-type(3) {
-	display: flex;
-	
-}
 
 /* navigatie */
-
-
   
 p:nth-of-type(1) {
 	text-align: center;
@@ -98,17 +83,28 @@ nav a {
 	justify-content: center;
 }
 
-header img {
-	max-height: 8em;
-	max-width: 8em;
-}
 
-.rechts ul {
+header img:nth-of-type(1) {
 	max-height: 2em;
 	max-width: 2em;
 }
 
-.links ul {
+header img:nth-of-type(2) {
+	max-height: 8em;
+	max-width: 8em;
+}
+
+header img:nth-of-type(3) {
+	max-height: 2em;
+	max-width: 2em;
+}
+
+header img:nth-of-type(4) {
+	max-height: 2em;
+	max-width: 2em;
+}
+
+header img:nth-of-type(5) {
 	max-height: 2em;
 	max-width: 2em;
 }
@@ -132,26 +128,22 @@ of brightness(0) */
 
 
 
+/* 
+@media (max-width: 988px) {
+	header img:nth-of-type(1) {display: none;}
+}
+
+@media (max-width: 988px) {
+	header img:nth-of-type(4) {display: none;}
+}
 
 @media (min-width: 988px) {
-	.zoekloop2 {display: none;}
+	header img:nth-of-type(3) {display: none}
 }
 
 @media (min-width: 988px) {
-	.hamburger {display: none;}
-}
-
-@media (max-width: 988px) {
-	.geld {display: none;}
-}
-
-@media (max-width: 988px) {
-	.zoekloop {display: none}
-}
-
-@media (max-width: 988px) {
-	.navigatie {display: none;}
-}
+	.container {display: none;}
+} */
 
 
 /*Foto 1*/
@@ -478,9 +470,24 @@ button {
 
 .youmayalsolike img {
 	max-height: fit-content;
-	max-width: 50%;
-	margin: 10px 10px 10px 10px;
-	
+	max-width: 80%;
+	display: flex;
+	margin-left: ;
+	justify-content: center;
+}
+
+.youmayalsolike section:nth-of-type(1) {
+	displa
+}
+
+.youmayalsolike h3 {
+	display: flex;
+	justify-content: center;
+}
+
+.youmayalsolike p {
+	display: flex;
+	justify-content: center;
 }
 
 /* BOVENFOOTER P2 */
