@@ -34,8 +34,6 @@ body {
 	background-color: var(--primary-color)
 }
 
-
-
 li {
 	list-style: none;
 }
@@ -218,9 +216,9 @@ of brightness(0) */
 
 /* CARROUSEL bron: https://blog.hubspot.com/website/bootstrap-carousel-css*/
 
-section:nth-of-type(4) {
-	font-size: 25px;
-	margin: 30px 80px 30px 20px;
+main section:nth-of-type(4) {
+	font-size: 15px;
+	margin: 10px 30px 50px 30px;
 }
 
 .caroussel {
@@ -233,7 +231,6 @@ section:nth-of-type(4) {
 	display: flex;
 	flex-shrink: 0;
 	width: fit-content;
-	height: 800px;
 	scroll-snap-align: start;
 	scroll-behavior: smooth;
 	align-items: center;
@@ -244,14 +241,14 @@ section:nth-of-type(4) {
 	display: flex;
 	flex-direction: column;
 	background-color: lightgrey;
-	margin: 20px 20px 20px 20px;
+	margin: 10px 10px 10px 10px;
 }
 
 .caroussel article:nth-of-type(2) {
 	display: flex;
 	flex-direction: column;
 	background-color: lightgrey;
-	margin: 20px 20px 20px 20px;
+	margin: 10px 10px 10px 10px;
 }
 
 .caroussel img:nth-of-type(1) {
@@ -274,12 +271,12 @@ section:nth-of-type(4) {
 
 
 /* COLLECTIONS */
-section:nth-of-type(6) {
-	margin: 30px 80px 30px 20px;
+main section:nth-of-type(6) {
+	margin: 30px 20px 80px 20px;
 	font-size: 25px;
 }
 
-section:nth-of-type(7) {
+main section:nth-of-type(7) {
 	margin: 20px 20px 20px 20px;
 }
 
@@ -401,7 +398,7 @@ footer img {
 
 /* PAGINA 2 */
 
-/* CAROUSSEL */
+/* CAROUSSEL P2*/
 
 .caroussel3 {
 	display: flex;
@@ -437,6 +434,8 @@ footer img {
 	margin: 20px 20px 20px 20px;
 }
 
+/* TEXT P2 */
+
 .catalogpage p {
 	text-align: start;
 	margin: 20px 20px 20px 20px;
@@ -452,9 +451,46 @@ footer img {
 	margin: 20px 20px 20px 20px;
 }
 
+.catalogpage {
+	padding-bottom: 50px;
+}
+
+
+/* MATEN */
+
 button {
 	padding: 5px 10px 5px 10px;
 	border-radius: 30px;
 	background-color: var(--color-background);
 	font-size: 15px;
+}
+
+.sizes {
+	margin: 20px 20px 20px 20px;
+}
+
+/* YOU MAY ALSO LIKE */
+
+.youmayalsolike {
+	display: flex;
+	justify-content: center;
+}
+
+.youmayalsolike img {
+	max-height: fit-content;
+	max-width: 50%;
+	margin: 10px 10px 10px 10px;
+	
+}
+
+/* BOVENFOOTER P2 */
+
+.bovenfooter {
+	text-align: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	line-height: 30px;
+	margin-left: 50px;
+	margin-right: 50px;
 }
