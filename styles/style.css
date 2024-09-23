@@ -20,6 +20,7 @@
 	--color-text:#111;
 	--color-background:#eee;
 	--primary-color: white;
+	--backgroundcolorarticle: #EFEFEF; 
 }
 
 
@@ -38,10 +39,7 @@ li {
 	list-style: none;
 }
 
-/* img {
-	width: 100%;
-	height: auto;
-} */
+
 
 /*HEADER*/
 
@@ -72,11 +70,6 @@ nav {
 
 /* navigatie */
   
-p:nth-of-type(1) {
-	text-align: center;
-	padding-top: 20px;
-}
-
 nav a {
 	text-decoration: none;
 	color: var(--color-text);
@@ -84,30 +77,45 @@ nav a {
 }
 
 
-header img:nth-of-type(1) {
+/* header img:nth-of-type(1) {
 	max-height: 2em;
 	max-width: 2em;
-}
+} */
 
-header img:nth-of-type(2) {
+header img:nth-of-type(1) {
 	max-height: 8em;
 	max-width: 8em;
 }
 
-header img:nth-of-type(3) {
+.mandje img:nth-of-type(1) {
 	max-height: 2em;
 	max-width: 2em;
 }
 
-header img:nth-of-type(4) {
-	max-height: 2em;
-	max-width: 2em;
+.mandje img:nth-of-type(2) {
+	max-height: 3em;
+	max-width: 3em;
 }
 
-header img:nth-of-type(5) {
+.mandje {
+	display: flex;
+	align-items: center;
+}
+
+/* header img:nth-of-type(3) {
 	max-height: 2em;
 	max-width: 2em;
-}
+} */
+
+/* header img:nth-of-type(4) {
+	max-height: 2em;
+	max-width: 2em;
+} */
+
+/* header img:nth-of-type(5) {
+	max-height: 2em;
+	max-width: 2em;
+} */
 
 
 /* HAMBURGER */
@@ -122,14 +130,16 @@ header img:nth-of-type(5) {
 	background-color: #333;
 	margin: 6px 0;
  }
+
+
 /* DARK MODE filter: invert(100%)
 of brightness(0) */
 
 
 
 
-/* 
-@media (max-width: 988px) {
+
+/* @media (max-width: 988px) {
 	header img:nth-of-type(1) {display: none;}
 }
 
@@ -208,9 +218,14 @@ of brightness(0) */
 
 /* CARROUSEL bron: https://blog.hubspot.com/website/bootstrap-carousel-css*/
 
+.bleached h2 {
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	font-size: 2.2rem;
+	font-weight: 550;
+}
+
 main section:nth-of-type(4) {
 	font-size: 15px;
-	margin: 10px 30px 50px 30px;
 }
 
 .caroussel {
@@ -225,21 +240,22 @@ main section:nth-of-type(4) {
 	width: fit-content;
 	scroll-snap-align: start;
 	scroll-behavior: smooth;
-	align-items: center;
+	align-items: left;
 	scroll-snap-type: x mandatory;
+
 }
 
 .caroussel article:nth-of-type(1) {
 	display: flex;
 	flex-direction: column;
-	background-color: lightgrey;
+	background-color: var(--backgroundcolorarticle);
 	margin: 10px 10px 10px 10px;
 }
 
 .caroussel article:nth-of-type(2) {
 	display: flex;
 	flex-direction: column;
-	background-color: lightgrey;
+	background-color: var(--backgroundcolorarticle);
 	margin: 10px 10px 10px 10px;
 }
 
@@ -251,35 +267,57 @@ main section:nth-of-type(4) {
 }
 
 .caroussel h3 {
-	font-size: 30px;
-	line-height: 20px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin-left: 20px;
 }
 
 .caroussel p {
-	font-size: 15px;
-	line-height: 20px;
+	line-height: 30px;
 	margin: 20px 20px 20px 20px;
+	font-weight: 50;
 }
 
 
-/* COLLECTIONS */
-main section:nth-of-type(6) {
-	margin: 30px 20px 80px 20px;
-	font-size: 25px;
+/* COLLECTIES */
+
+.collecties1 h2 {
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	font-size: 2.2rem;
+	font-weight: 550;
+	margin-top: 2rem;
 }
 
-main section:nth-of-type(7) {
-	margin: 20px 20px 20px 20px;
+.collecties {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .collecties a {
 	text-decoration: none;
 	color: var(--color-text);
 	font-size: 20px;
-	font-weight: 500;
+	font-weight: 800;
+	margin-left: 20px;
 }
 
+.collecties img {
+	max-height: 100%;
+	max-width: 100%;
+	margin: 20px 20px 20px 20px;
+}
+
+
+
 /* LATEST ADDITIONS CAROUSSEL */
+
+.additions h2 {
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	margin-top: 2rem;
+	font-size: 2.2rem;
+	font-weight: 550;
+}
 
 .caroussel2 {
 	display: flex;
@@ -349,7 +387,7 @@ main section:nth-of-type(7) {
 
 /* BOVEN FOOTER */
 
-section:nth-of-type(10) {
+.bovenfooter {
 	text-align: center;
 	align-items: center;
 	display: flex;
@@ -362,11 +400,30 @@ section:nth-of-type(10) {
 .bovenfooter img:nth-of-type(1) {
 	max-height: 8em;
 	max-width: 8em;
+	margin-top: 60px;
 }
 
 .bovenfooter img:nth-of-type(2) {
 	max-height: 5em;
 	max-width: 5em;
+}
+
+.bovenfooter h2 {
+	padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+	margin-top: 2rem;
+	font-size: 2.2rem;
+	font-weight: 540;
+	line-height: 50px;
+}
+
+.bovenfooter input {
+	height: 51.5px;
+	width: 310.4px;
+	margin-top: 20px;
+}
+
+.bovenfooter p {
+	margin: 10px;
 }
 
 /* FOOTER */
@@ -383,7 +440,7 @@ footer a {
 	font-size: 10px;
 }
 
-footer img {
+.footer img {
 	max-height: 9em;
 	max-width: 9em;
 }
@@ -472,12 +529,12 @@ button {
 	max-height: fit-content;
 	max-width: 80%;
 	display: flex;
-	margin-left: ;
+	margin-left: 80%;
 	justify-content: center;
 }
 
 .youmayalsolike section:nth-of-type(1) {
-	displa
+	display: flex;
 }
 
 .youmayalsolike h3 {
