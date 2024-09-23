@@ -514,6 +514,15 @@ button {
 	font-size: 15px;
 }
 
+.kopen button:nth-of-type(3) {
+	background-color: #3244a8;
+	border-radius: 0;
+	border-color: #3244a8;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	color: var(--color-background);
+}
+
 .sizes {
 	margin: 20px 20px 20px 20px;
 }
@@ -523,18 +532,12 @@ button {
 .youmayalsolike {
 	display: flex;
 	justify-content: center;
+	margin-top: 2em;
 }
 
-.youmayalsolike img {
-	max-height: fit-content;
-	max-width: 80%;
+.youmayalsolike section {
 	display: flex;
-	margin-left: 80%;
-	justify-content: center;
-}
-
-.youmayalsolike section:nth-of-type(1) {
-	display: flex;
+	flex-direction: column;
 }
 
 .youmayalsolike h3 {
@@ -542,7 +545,21 @@ button {
 	justify-content: center;
 }
 
+.youmayalsolike h2 {
+	display: flex;
+	flex-direction: column;
+}
+
+
 .youmayalsolike p {
+	display: flex;
+	justify-content: center;
+} 
+
+.youmayalsolike img {
+	max-height: fit-content;
+	max-width: 80%;
+	margin-left: 1em;
 	display: flex;
 	justify-content: center;
 }
