@@ -17,21 +17,20 @@
 	<header>
 		<nav>
 
-			<div class="container" onclick="myFunction(this)">
+			<div class="container">
 				<div class="bar1"></div>
 				<div class="bar2"></div>
 				<div class="bar3"></div>
 			</div>
 
-			<!-- <img src="images/zoekloop.png" alt="zoekbalk"> -->
 			<img src="images/official.logo.png" alt="Bleached Renaissance logo, een B en een R. Met daaronder de tekst
 			Bleached Renaissance en art, not just clothing.">
 
 			<div class="mandje">
-				<!-- <img src="images/geld.png" alt="land en munteenheid instellen"> -->
-				<img src="images/zoekloop.png" alt="zoekbalk">
-				<img src="images/winkelmandje.png" alt="winkelmandje">
+				<a href="#"><img src="images/zoekloop.png" alt="zoekbalk"></a>
+				<a href="#"><img src="images/winkelmandje.png" alt="winkelmandje"></a>
 			</div>
+
 		</nav>
 	</header>
 
@@ -53,8 +52,8 @@
 
 		<section class="catalogpage">
 			<p>Bleached Renaissance</p>
-			<h1>The Lasered Jacket</h1>
-			<h2>€195,00 EUR</h2>
+			<h2>The Lasered Jacket</h2>
+			<h3>€195,00 EUR</h3>
 			<p>Tax included. Shipping calculated at checkout.</p>
 			<p>9 Renaissance artworks made into one.</p>
 			<h2>Attributes</h2>
@@ -79,22 +78,22 @@
 
 		<section class="kopen">
 			<p>Quantity</p>
-			<button>- 1 +</button>
+			<button><p>-</p> 1 <p>+</p></button>
 			<button>Add to cart</button>
 			<button>Buy with ShopPay</button>
-		</section>
-
-		<section>
 			<p>More payment options</p>
-		</section>
-
-		<section>
 			<p>Pickup available at atelier</p>
 			<p>Usually available in 5+ days</p>
 			<a href="#">View store information</a>
 		</section>
 
-		<h2>You may also like</h2>
+		
+			
+	
+
+		<section>
+			<h2>You may also like</h2>
+		</section>
 		
 		<section class="youmayalsolike">
 			<section>
@@ -159,6 +158,16 @@
 			</li>
 		</ul>
 	</footer>
+
+	<label>
+		<input type="radio" name="theme" value="auto" checked> auto
+	   </label>
+	   <label>
+	   <input type="radio" name="theme" value="light"> licht
+	   </label>
+	   <label>
+		<input type="radio" name="theme" value="dark"> donker
+	</label>
 	
 	<script defer src="scripts/script.js"></script>
 </body>

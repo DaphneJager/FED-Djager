@@ -17,11 +17,65 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	--color-text:#111;
-	--color-background:#eee;
+	color-scheme: light dark;
+	--color-text: light dark (black, white);
+	--color-background: light dark (white, #000000);
 	--primary-color: white;
 	--backgroundcolorarticle: #EFEFEF; 
 }
+
+html:has([value="light"]:checked) {
+	color-scheme: light;
+	}
+	
+html:has([value="dark"]:checked) {
+	color-scheme: dark;
+	}
+
+html:has([value="dark"]:checked) header img {
+	color-scheme: dark;
+	filter: invert(100);
+	}
+
+html:has([value="auto"]:checked) article {
+	background-color: #333;
+	}
+
+html:has([value="auto"]:checked) header img {
+	filter: invert(100);
+	}
+
+html:has([value="dark"]:checked) article {
+	color-scheme: dark;
+	background-color: #333;
+	}
+
+html:has([value="dark"]:checked) footer img {
+	color-scheme: dark;
+	filter: invert(100);
+	}
+
+html:has([value="dark"]:checked) button {
+	color-scheme: dark;
+	background-color: #787878;
+	color: white;
+	}
+
+html:has([value="dark"]:checked) button:nth-of-type(1) {
+	color-scheme: dark;
+	background-color: #1b36e4;
+	color: white;
+	filter: invert(0);
+	}
+
+
+	
+
+	
+   
+
+
+
 
 
 
@@ -32,11 +86,36 @@
 /****************/
 
 body {
-	background-color: var(--primary-color)
+	background-color: var(--color-background)
 }
 
 li {
 	list-style: none;
+}
+
+h1 {
+	font-size: 15px;
+	text-align: center;
+	margin-top: 1rem;
+	font-weight: 200;
+	color: var(--color-text);
+}
+
+h2 {
+	color: var(--color-text);
+}
+
+h3 {
+	margin: 20px 20px 20px 20px;
+	color: var(--color-text);
+}
+
+h4 {
+	color: var(--color-text);
+}
+
+p {
+	color: var(--color-text);
 }
 
 
@@ -46,7 +125,9 @@ li {
 header {
 	display: flex;
 	flex-direction: column;
+	background-color: var(--color-background);
 }
+
 
 header a {
 	text-decoration: none;
@@ -76,11 +157,10 @@ nav a {
 	justify-content: center;
 }
 
-
-/* header img:nth-of-type(1) {
-	max-height: 2em;
-	max-width: 2em;
-} */
+header {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
 
 header img:nth-of-type(1) {
 	max-height: 8em;
@@ -88,18 +168,19 @@ header img:nth-of-type(1) {
 }
 
 .mandje img:nth-of-type(1) {
-	max-height: 2em;
-	max-width: 2em;
+	max-height: 2.5em;
+	max-width: 2.5em;
 }
 
 .mandje img:nth-of-type(2) {
-	max-height: 3em;
-	max-width: 3em;
+	max-height: 3.5em;
+	max-width: 3.5em;
 }
 
 .mandje {
 	display: flex;
 	align-items: center;
+	margin-right: 2em;
 }
 
 /* header img:nth-of-type(3) {
@@ -122,6 +203,8 @@ header img:nth-of-type(1) {
 .container {
 	display: inline-block;
 	cursor: pointer;
+	margin-left: 2em;
+	margin-right: 1em;
 }
   
   .bar1, .bar2, .bar3 {
@@ -132,8 +215,7 @@ header img:nth-of-type(1) {
  }
 
 
-/* DARK MODE filter: invert(100%)
-of brightness(0) */
+
 
 
 
@@ -455,6 +537,11 @@ footer a {
 	overflow-x: auto;
 }
 
+.caroussel3 img {
+	max-height: 95%;
+	max-width: 95%;
+}
+
 .caroussel3 section {
 	display: flex;
 	flex-shrink: 0;
@@ -510,17 +597,64 @@ footer a {
 button {
 	padding: 5px 10px 5px 10px;
 	border-radius: 30px;
-	background-color: var(--color-background);
-	font-size: 15px;
+	background-color: var(--primary-color);
+	font-size: 18px;
+	border: solid 1px;
+	margin: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.sizes h2 {
+	font-size: 13px;
+	font-weight: 80;
+	margin-bottom: 15px;
+}
+
+.sizes button:nth-of-type(1) {
+	filter: invert(100);
+}
+
+.kopen {
+	margin: 20px 20px 20px 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.kopen button:nth-of-type(1) {
+	border-radius: 0;
+	padding: 15px;
+	margin: 5px 5px 15px 5px;
+	border: solid 1px;
+	max-width: 180px;
+	display: flex;
+	justify-content: space-evenly;
+	font-size: 20px;
+	font-weight: 50;
+}
+
+.kopen button:nth-of-type(2) {
+	border-radius: 0;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	margin: 5px;
+	padding: 15px;
+	border: solid 1px;
 }
 
 .kopen button:nth-of-type(3) {
-	background-color: #3244a8;
+	background-color: #4219d4;
 	border-radius: 0;
-	border-color: #3244a8;
+	border-color: #4219d4;
 	padding-left: 4rem;
 	padding-right: 4rem;
 	color: var(--color-background);
+	margin: 5px;
+	padding: 15px;
+	border: none;
 }
 
 .sizes {
