@@ -18,10 +18,13 @@
 /*********************/
 :root {
 	color-scheme: light dark;
-	--color-text: light dark (black, white);
-	--color-background: light dark (white, black);
+	--color-text-dark: white;
+	--color-text-light: black;
+	--color-background-dark: black;
+	--color-background-light: white;
 	--primary-color: white;
 	--backgroundcolorarticle: #EFEFEF; 
+	--backgroundcolorarticle-dark: #333;
 }
 
 /* LIGHT */
@@ -32,33 +35,33 @@ html:has([value="light"]:checked) {
 
 html:has([value="light"]:checked) .mainimage h2 {
 	color-scheme: light;
-	color: white;
+	color: var(--color-text-dark);
 }
 
 html:has([value="light"]:checked) .stickimage h2 {
 	color-scheme: light;
-	color: white;
+	color: var(--color-text-dark);
 }
 
 html:has([value="light"]:checked) .stickimage p {
 	color-scheme: light;
-	color: white;
+	color: var(--color-text-dark);
 }
 
 
 html:has([value="light"]:checked) nav {
 	color-scheme: light;
-	background-color: white;
+	background-color: var(--color-background-light);
 }
 
 html:has([value="light"]:checked) .knop1 {
 	color-scheme: light;
-	background-color: white;
+	background-color: var(--color-background-light);
 }
 
 html:has([value="light"]:checked) .knop2 {
 	color-scheme: light;
-	background-color: white;
+	background-color: var(--color-background-light);
 }
 
 
@@ -75,7 +78,7 @@ html:has([value="dark"]:checked) header img {
 
 html:has([value="dark"]:checked) .bleached article{
 	color-scheme: dark;
-	background-color: #333;
+	background-color: var(--backgroundcolorarticle-dark);
 }
 
 html:has([value="dark"]:checked) footer img {
@@ -91,41 +94,57 @@ html:has([value="dark"]:checked) .bovenfooter img {
 html:has([value="dark"]:checked) button {
 	color-scheme: dark;
 	background-color: transparent;
-	color: white;
+	color: var(--color-text-dark);
 }
 
 html:has([value="dark"]:checked) button:nth-of-type(1) {
 	color-scheme: dark;
 	background-color: transparent;
-	color: white;
+	color: var(--color-text-dark);
 	filter: invert(0);
 }
 
-html:has([value="dark"]:checked) .bar1 .bar2 .bar3 {
+html:has([value="dark"]:checked) .bar1 {
 	color-scheme: dark;
-	background-color: white;
-	color: white;
+	background-color: var(--color-background-light);
+}
+
+html:has([value="dark"]:checked) .bar2 {
+	color-scheme: dark;
+	background-color: var(--color-background-light);
+}
+
+html:has([value="dark"]:checked) .bar3 {
+	color-scheme: dark;
+	background-color: var(--color-background-light);
 }
 
 html:has([value="dark"]:checked) .kopen button:nth-of-type(3) {
 	color-scheme: dark;
 	background-color: #4219d4;
-	color: white;
+	color: var(--color-text-dark);
 }
 
 html:has([value="dark"]:checked) nav {
 	color-scheme: dark;
-	background-color: black;
+	background-color: var(--color-background-dark);
 }
 
 html:has([value="dark"]:checked) .knop1 {
 	color-scheme: dark;
-	background-color: black;
+	background-color: var(--color-background-dark);
 }
 
 html:has([value="dark"]:checked) .knop2 {
 	color-scheme: dark;
-	background-color: black;
+	background-color: var(--color-background-dark);
+}
+
+html:has([value="dark"]:checked) .sizes button:nth-of-type(1) {
+	color-scheme: dark;
+	background-color: var(--color-background-light);
+	color: var(--color-text-light);
+	border-color: var(--color-background-light);
 }
 
 	
@@ -167,7 +186,20 @@ p {
 	color: var(--color-text);
 }
 
+.skiptocontent {
+	visibility: hidden;
+}
 
+.textsize {
+	display: flex;
+	justify-content: center;
+}
+
+.textsize button {
+	font-size: 10px;
+	max-height: fit-content;
+	max-width: fit-content;
+}
 
 /*HEADER*/
 
@@ -182,14 +214,14 @@ header button {
 	background-color: none;
 }
 
-
+/* Bron: DLO opdracht hamburger menu */
 nav {
 	align-content: start;
 	gap: 1em;
 	position: fixed;
 	left: 0;
 	right: 0;
-	top: 0;
+	top: 10px;
 	bottom: 0;
 	width: 100vw;
 	height: 100vh;
@@ -281,7 +313,7 @@ header img:nth-of-type(1) {
 .bar1, .bar2, .bar3 {
 	width: 25px;
 	height: 2px;
-	background-color: #333;
+	background-color: var(--color-background-dark);
 	margin: 10px 0;
  }
 

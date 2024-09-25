@@ -306,8 +306,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. bron voor parralax: https://www.w3schools.com/howto/howto_css_parallax.asp
+  2. CARROUSEL bron: https://blog.hubspot.com/website/bootstrap-carousel-css*
+  3. Bron: DLO opdracht hamburger menu
 
 </details>
