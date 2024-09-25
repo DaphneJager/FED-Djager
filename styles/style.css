@@ -197,7 +197,7 @@ nav {
 	bottom: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: black;
+	background-color: var(--color-background);
 	z-index: 1000;
 	translate: -100% 0%;
 	transition: translate .3s;
@@ -290,31 +290,6 @@ header img:nth-of-type(1) {
  }
 
 
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 988px) {
-	header img:nth-of-type(1) {display: none;}
-}
-
-@media (max-width: 988px) {
-	header img:nth-of-type(4) {display: none;}
-}
-
-@media (min-width: 988px) {
-	header img:nth-of-type(3) {display: none}
-}
-
-@media (min-width: 988px) {
-	.container {display: none;}
-} */
 
 
 /*Foto 1*/
