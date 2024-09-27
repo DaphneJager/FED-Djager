@@ -17,7 +17,7 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	color-scheme: light dark;
+	color-scheme: light dark bleachmode;
 	--color-text-dark: white;
 	--color-text-light: black;
 	--color-background-dark: black;
@@ -147,6 +147,36 @@ html:has([value="dark"]:checked) .sizes button:nth-of-type(1) {
 	border-color: var(--color-background-light);
 }
 
+html:has([value="dark"]:checked) .bovenfooter p:last-of-type {
+	color-scheme: dark;
+	color: var(--color-text-light);
+}
+
+/* BLEACH MODE */
+#bleachmode {
+	position: absolute;
+	width: 100%;
+	height: 686%;
+	background-color: white;
+	z-index: 8000;
+}
+
+#bleachModeButton {
+	margin-left: 110px;
+}
+
+.visually_hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+
+
 	
 /****************/
 /* JOUW STYLING */
@@ -198,12 +228,11 @@ p {
 	max-width: fit-content;
 }
 
-#fontKnop {
-	max-height: 30px;
-	max-width: fit-content;
+label {
+	padding: 10px;
 	margin-top: 10px;
-	
 }
+
 
 /* SKIP TO CONTENT */
 /* BRON: https://css-tricks.com/how-to-create-a-skip-to-content-link/ */
@@ -618,6 +647,10 @@ main section:nth-of-type(4) {
 	margin: 10px;
 }
 
+.bovenfooter p:last-of-type {
+	color: var(--color-text-dark);
+}
+
 /* FOOTER */
 
 footer {
@@ -636,6 +669,7 @@ footer a {
 	max-height: 9em;
 	max-width: 9em;
 }
+
 
 /* PAGINA 2 */
 

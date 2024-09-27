@@ -1,10 +1,16 @@
 // JavaScript Document
 
 const openButton = document.querySelector ("header > button");
-const fontSize = document.getElementById ("fontKnop")
 const deNav = document.querySelector("nav");
-// let cont = document.body
 
+const bleachModeButton = document.getElementById("bleachModeButton")
+const bleachmode = document.getElementById("bleachmode")
+
+bleachModeButton.addEventListener("click", toggleBleach)
+
+function toggleBleach() {
+  bleachmode.classList.toggle("visually_hidden");
+}
 
 // Functie om het menu te openen en te sluiten
 function openMenu() {
@@ -13,6 +19,7 @@ function openMenu() {
   
   // Toggle de class toonMenu op de nav zodat de css de nav kan laten zien of verbergen
   deNav.classList.toggle("toonMenu");
+
   
   // Als de nav wordt getoond, dan wordt de scroll van de body uitgezet
   // Als de nav wordt verborgen, dan wordt de scroll van de body weer aangezet
@@ -23,19 +30,7 @@ function openMenu() {
   }
 }
 
-// function veranderSize {
-//   classList.toggle("fontKnop");
-
-
-//   if () {
-//     document.getElementById ("fontKnop") = ""
-//   }
-
-// }
-
-
 openButton.onclick = openMenu;
-// fontSize.onclick = veranderSize;
 
 
 
