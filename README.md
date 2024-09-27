@@ -308,6 +308,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   1. bron voor parralax: https://www.w3schools.com/howto/howto_css_parallax.asp
   2. CARROUSEL bron: https://blog.hubspot.com/website/bootstrap-carousel-css*
-  3. Bron: DLO opdracht hamburger menu
+  3. hamburger Bron: DLO opdracht hamburger menu
+  4. skip to content knop: https://css-tricks.com/how-to-create-a-skip-to-content-link/
 
 </details>

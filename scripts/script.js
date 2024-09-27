@@ -1,16 +1,15 @@
 // JavaScript Document
 
-var openButton = document.querySelector ("header > button");
-
+const openButton = document.querySelector ("header > button");
+const fontSize = document.getElementById ("fontKnop")
+const deNav = document.querySelector("nav");
 // let cont = document.body
-
-openButton.onclick = openMenu;
 
 
 // Functie om het menu te openen en te sluiten
 function openMenu() {
   // Selecteer de nav
-  var deNav = document.querySelector("nav");
+  
   
   // Toggle de class toonMenu op de nav zodat de css de nav kan laten zien of verbergen
   deNav.classList.toggle("toonMenu");
@@ -24,11 +23,19 @@ function openMenu() {
   }
 }
 
+// function veranderSize {
+//   classList.toggle("fontKnop");
 
-// Font size
-// function changeSizeByBtn(size) {
-//   cont.style.fontSize = size;
+
+//   if () {
+//     document.getElementById ("fontKnop") = ""
+//   }
+
 // }
+
+
+openButton.onclick = openMenu;
+// fontSize.onclick = veranderSize;
 
 
 

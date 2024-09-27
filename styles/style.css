@@ -186,9 +186,6 @@ p {
 	color: var(--color-text);
 }
 
-.skiptocontent {
-	visibility: hidden;
-}
 
 .textsize {
 	display: flex;
@@ -199,6 +196,36 @@ p {
 	font-size: 10px;
 	max-height: fit-content;
 	max-width: fit-content;
+}
+
+#fontKnop {
+	max-height: 30px;
+	max-width: fit-content;
+	margin-top: 10px;
+	
+}
+
+/* SKIP TO CONTENT */
+/* BRON: https://css-tricks.com/how-to-create-a-skip-to-content-link/ */
+
+.skip-to-content-link {
+	left: 50%;
+	position: absolute;
+	transform: translateY(-100%);
+}
+
+.skip-to-content-link {
+	background: var(--backgroundcolorarticle);
+	height: 30px;
+	left: 50%;
+	padding: 8px;
+	position: absolute;
+	transform: translateY(-100%);
+	transition: transform 0.3s;
+}
+  
+.skip-to-content-link:focus {
+	transform: translateY(0%);
 }
 
 /*HEADER*/
@@ -499,6 +526,7 @@ main section:nth-of-type(4) {
 	align-items: center;
 	scroll-snap-type: x mandatory;
 }
+
 
 .caroussel2 article:nth-of-type(1) {
 	display: flex;
