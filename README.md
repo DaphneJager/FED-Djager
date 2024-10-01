@@ -310,5 +310,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   2. CARROUSEL bron: https://blog.hubspot.com/website/bootstrap-carousel-css*
   3. hamburger Bron: DLO opdracht hamburger menu
   4. skip to content knop: https://css-tricks.com/how-to-create-a-skip-to-content-link/
+  5. inputfield opmaak: https://www.w3schools.com/css/css_form.asp
 
 </details>

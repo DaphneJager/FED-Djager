@@ -161,8 +161,12 @@ html:has([value="dark"]:checked) .bovenfooter p:last-of-type {
 	z-index: 8000;
 }
 
-#bleachModeButton {
-	margin-left: 110px;
+#bleachmode1 {
+	position: absolute;
+	width: 100%;
+	height: 443%;
+	background-color: white;
+	z-index: 8000;
 }
 
 .visually_hidden {
@@ -285,7 +289,7 @@ nav {
 	z-index: 1000;
 	translate: -100% 0%;
 	transition: translate .3s;
-	margin-top: 11rem;
+	margin-top: 14rem;
 }
 
 header button {
@@ -637,10 +641,20 @@ main section:nth-of-type(4) {
 	line-height: 50px;
 }
 
+/*bron: https://www.w3schools.com/css/css_form.asp*/
 .bovenfooter input {
 	height: 51.5px;
 	width: 310.4px;
 	margin-top: 20px;
+	padding-left: 10px;
+	font-family: 'Times New Roman', Times, serif;
+	background-image: url("../images/pijl_email.png");
+	background-position: 260px 10px;
+	background-repeat: no-repeat;
+}
+
+input:focus {
+	border: 3px solid #555;
 }
 
 .bovenfooter p {
@@ -684,6 +698,10 @@ footer a {
 .caroussel3 img {
 	max-height: 95%;
 	max-width: 95%;
+}
+
+.caroussel3 img:hover {
+	zoom: 1.2;
 }
 
 .caroussel3 section {

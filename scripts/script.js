@@ -5,12 +5,19 @@ const deNav = document.querySelector("nav");
 
 const bleachModeButton = document.getElementById("bleachModeButton")
 const bleachmode = document.getElementById("bleachmode")
+const bleachmode1 = document.getElementById("bleachmode1")
 
 bleachModeButton.addEventListener("click", toggleBleach)
 
+// Bleach mode
 function toggleBleach() {
   bleachmode.classList.toggle("visually_hidden");
 }
+
+function toggleBleach() {
+  bleachmode1.classList.toggle("visually_hidden");
+}
+
 
 // Functie om het menu te openen en te sluiten
 function openMenu() {
