@@ -290,6 +290,7 @@ nav {
 	translate: -100% 0%;
 	transition: translate .3s;
 	margin-top: 14rem;
+	visibility: hidden;
 }
 
 header button {
@@ -311,6 +312,7 @@ nav a {
 
 nav.toonMenu {
 	translate: 0% 0%;
+	visibility: visible;
 }
 
 nav ul {
