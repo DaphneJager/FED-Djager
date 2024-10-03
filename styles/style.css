@@ -193,7 +193,7 @@ html:has([value="dark"]:checked) .bovenfooter p:last-of-type {
 
 body {
 	background-color: var(--color-background);
-	overflow: hidden;
+	overflow: auto;
 }
 
 li {
@@ -705,6 +705,7 @@ footer a {
 	display: flex;
 	overflow-x: auto;
 	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .caroussel3 h2{
@@ -732,9 +733,6 @@ footer a {
 	max-width: 95%;
 }
 
-.caroussel3 img:hover {
-	zoom: 1.2;
-}
 
 .caroussel3 section {
 	display: flex;
@@ -763,6 +761,7 @@ footer a {
 	flex-direction: column;
 	margin: 20px 20px 20px 20px;
 }
+
 
 /* TEXT P2 */
 
@@ -922,15 +921,6 @@ section:nth-of-type(5) {
 	justify-content: center;
 }
 
-/* .youmayalsolike h2 {
-	position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    border: 0;
-} */
 
 
 .youmayalsolike p {
