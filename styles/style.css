@@ -197,6 +197,7 @@ body {
 	overflow-x: hidden;
 }
 
+
 li {
 	list-style: none;
 }
@@ -270,16 +271,6 @@ label {
 
 /*HEADER*/
 
-/* header button {
-	padding: .5em;
-	appearance: none;
-	background-color: var(--color-background);
-	border: none;
-} */
-
-/* .button {
-	background: transparent;
-} */
 
 /* Bron: DLO opdracht hamburger menu */
 nav {
@@ -399,7 +390,7 @@ header img:nth-of-type(1) {
 	height: 40vh;
 	background-size: cover;
 	text-align: center;
-	padding-top: 20%;
+	padding-top: 10%;
 	color: var(--color-background);
 	font-size: 1.5em;
 }
@@ -416,7 +407,7 @@ header img:nth-of-type(1) {
 	background-size: cover;
 	height: 40vh;
 	text-align: center;
-	padding-top: 20%;
+	padding-top: 10%;
 	color: var(--color-background);
 	font-family: 'Times New Roman', Times, serif;
 	background-position: center;
@@ -726,15 +717,15 @@ footer a {
 }
 
 .caroussel3 img {
-	max-height: 95%;
-	max-width: 95%;
+	height: auto;
+	max-width: 100%;
 }
 
 
 .caroussel3 section {
 	display: flex;
 	flex-shrink: 0;
-	width: fit-content;
+	width: 130px;
 	scroll-snap-align: start;
 	scroll-behavior: smooth;
 	align-items: center;
