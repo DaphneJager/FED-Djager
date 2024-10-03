@@ -145,10 +145,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="images/sitemap.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="images/menureadme.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -173,8 +170,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | hoe ik een goeie start kan maken met css  | en dit             | en ik dit    | en dan ik dat    |
+  | nog verbeteringen aan html | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
@@ -214,8 +211,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
+  - css gaat nu wel goed
+  - javascript hulp vragen en dia goed doornemen
   - nog een punt
 - ...
 
@@ -309,7 +306,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Mijn CSS gaat eigenlijk heel goed. Met javascript heb ik nog moeite, maar met de studentassistenten en klasgenoten kom ik er wel uit. Ik heb een skipt-to-content knop toegevoegd, daar ben ik blij mee.
 
 
   ### Agenda voor meeting
@@ -317,7 +314,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   | student 1      | student 2          | student 3    | student 4        |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
+  | een aantal verbeterpunten in mijn css  | en dit             | en ik dit    | en dan ik dat    |
   | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
@@ -325,10 +322,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - goed vooruitgegaan met css
+  - goed begin aan javascript. Ik hoef op mijn website niet al te veel javascript toe te voegen. dat is fijn.
+  - Darkmode en lightmode goed voor elkaar gekregen
+  - Nog wat extras toevoegen
 
 </details>
 
@@ -342,19 +339,20 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="images/screenshotuitkomst1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="images/screenshotuitkomst2.png" width="375px" alt="uitomst opdracht 1">
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb veel over css en toegankelijkheid geleerd. Ik vind vooral toegankelijkheid heel interessant en hier wil ik wel graag mee doorwerken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="images/skiptocontent.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik vind Javascript nogsteeds erg lastig en kwam hier in mijn eentje ook eigenlijk niet uit. Ook had ik problemen mijn mijn caroussel op mijn tweede pagina. Ik heb hier uren aan gezeten maar het wou niet baten. Ik had deze beter willen hebben.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="images/javascript.png" width="375px" alt="bummer">
+  <img src="images/caroussel.png" width="375px" alt="bummer">
 </details>
 
 
