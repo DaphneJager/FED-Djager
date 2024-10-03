@@ -4,7 +4,6 @@ const openButton = document.querySelector ("header > button");
 const deNav = document.querySelector("nav");
 
 const bleachModeButton = document.getElementById("bleachModeButton")
-const bleachmode = document.getElementById("bleachmode")
 const bleachmode1 = document.getElementById("bleachmode1")
 
 bleachModeButton.addEventListener("click", toggleBleach)
@@ -33,7 +32,7 @@ function openMenu() {
   if (deNav.classList.contains("toonMenu")) {
     document.body.style.overflow = "hidden";
   } else {
-    document.body.style.overflow = document.body.style.overflow === "hidden" ? "" : "auto";
+    document.body.style.overflow = "";
   }
 }
 

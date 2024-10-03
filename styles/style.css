@@ -81,6 +81,11 @@ html:has([value="dark"]:checked) .bleached article{
 	background-color: var(--backgroundcolorarticle-dark);
 }
 
+html:has([value="dark"]:checked) .kopen img {
+	color-scheme: dark;
+	filter: invert(100);
+}
+
 html:has([value="dark"]:checked) footer img {
 	color-scheme: dark;
 	filter: invert(100);
@@ -152,7 +157,7 @@ html:has([value="dark"]:checked) .bovenfooter p:last-of-type {
 	color: var(--color-text-light);
 }
 
-/* BLEACH MODE */
+/* BLEACH MODE bron: Thomas*/
 #bleachmode {
 	position: absolute;
 	width: 100%;
@@ -187,7 +192,8 @@ html:has([value="dark"]:checked) .bovenfooter p:last-of-type {
 /****************/
 
 body {
-	background-color: var(--color-background)
+	background-color: var(--color-background);
+	overflow: hidden;
 }
 
 li {
@@ -263,16 +269,16 @@ label {
 
 /*HEADER*/
 
-header button {
+/* header button {
 	padding: .5em;
 	appearance: none;
 	background-color: var(--color-background);
 	border: none;
-}
+} */
 
-.button {
-	background-color: none;
-}
+/* .button {
+	background: transparent;
+} */
 
 /* Bron: DLO opdracht hamburger menu */
 nav {
@@ -288,15 +294,32 @@ nav {
 	background-color: var(--color-background);
 	z-index: 1000;
 	translate: -100% 0%;
-	transition: translate .3s;
+	transition: translate .3s, visibility .3s;
 	margin-top: 14rem;
 	visibility: hidden;
 }
 
-header button {
-	justify-self: start;
-	z-index: 2000;
+
+/* HAMBURGER */
+.bar1, .bar2, .bar3 {
+    width: 25px; 
+    height: 1.5px; 
+    background-color: var(--color-background-dark); 
+    margin: 4px 0; 
 }
+
+
+header button {
+	padding: 0.5em; 
+    appearance: none; 
+    background-color: transparent;
+    border: none;
+    cursor: pointer; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
 
 nav a {
 	display: flex;
@@ -364,21 +387,6 @@ header img:nth-of-type(1) {
 }
 
 
-/* HAMBURGER */
-.container {
-	display: inline-block;
-	align-items: center;
-	cursor: pointer;
-	margin-left: 2em;
-	margin-right: 1em;
-}
-  
-.bar1, .bar2, .bar3 {
-	width: 25px;
-	height: 2px;
-	background-color: var(--color-background-dark);
-	margin: 10px 0;
- }
 
 
 
@@ -458,7 +466,6 @@ main section:nth-of-type(4) {
 .caroussel {
 	display: flex;
 	overflow-x: auto;
-	overflow-x: auto;
 }
 
 .caroussel article {
@@ -467,7 +474,6 @@ main section:nth-of-type(4) {
 	width: fit-content;
 	scroll-snap-align: start;
 	scroll-behavior: smooth;
-	align-items: left;
 	scroll-snap-type: x mandatory;
 
 }
@@ -489,7 +495,6 @@ main section:nth-of-type(4) {
 .caroussel img:nth-of-type(1) {
 	max-height: 80%;
 	max-width: 80%;
-	align-items: left;
 	margin: 20px 20px 20px 20px;
 }
 
@@ -563,6 +568,14 @@ main section:nth-of-type(4) {
 	scroll-snap-type: x mandatory;
 }
 
+/* zorgt dat alle plaatjes even groot zijn in caroussel bron: chatgpt vraag: Mijn Html is: *kopie van mijn html caroussel 2*
+ Mijn css is: *kopie van mijn css caroussel2*  Het 3de plaatje in de caroussel is kleiner dan de rest. hoe fix ik dit */
+
+.caroussel2 article img {
+	max-height: 100%;
+	object-fit: cover;
+}
+
 
 .caroussel2 article:nth-of-type(1) {
 	display: flex;
@@ -594,10 +607,6 @@ main section:nth-of-type(4) {
 	max-width: 50%;
 }
 
-.caroussel2 img:nth-of-type() {
-	max-height: 50%;
-	max-width: 50%;
-}
 
 .caroussel2 h3 {
 	font-size: 20px;
@@ -695,7 +704,27 @@ footer a {
 .caroussel3 {
 	display: flex;
 	overflow-x: auto;
-	overflow-x: auto;
+	max-width: 100%;
+}
+
+.caroussel3 h2{
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+}
+
+.caroussel3 h3{
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
 }
 
 .caroussel3 img {
@@ -783,6 +812,11 @@ button {
 	filter: invert(100);
 }
 
+.kopen h2 {
+	font-size: 15px;
+	font-weight: 100;
+}
+
 .kopen {
 	margin: 20px 20px 20px 20px;
 	display: flex;
@@ -816,7 +850,7 @@ button {
 	border-color: #4219d4;
 	padding-left: 4rem;
 	padding-right: 4rem;
-	color: var(--color-background);
+	color: white;
 	margin: 5px;
 	padding: 15px;
 	border: none;
@@ -857,13 +891,30 @@ section:nth-of-type(5) {
 
 .youmayalsolike {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 	margin-top: 2em;
+}
+
+.producten {
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .youmayalsolike section {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
+	width: calc(50% - 20px);
+	box-sizing: border-box;
+}
+
+.youmayalsolike h2 {
+	margin-bottom: 1em;
+	display: flex;
+	justify-content: start;
 }
 
 .youmayalsolike h3 {
@@ -871,10 +922,15 @@ section:nth-of-type(5) {
 	justify-content: center;
 }
 
-.youmayalsolike h2 {
-	display: flex;
-	flex-direction: column;
-}
+/* .youmayalsolike h2 {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+} */
 
 
 .youmayalsolike p {
@@ -884,10 +940,10 @@ section:nth-of-type(5) {
 
 .youmayalsolike img {
 	max-height: fit-content;
-	max-width: 80%;
-	margin-left: 1em;
+	max-width: 100%;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 0.5em;
 }
 
 /* BOVENFOOTER P2 */
