@@ -231,7 +231,71 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+    A11y Checklist:
+  - "Use plain language and avoid figures of speech, idioms, and complicated metaphors." De voorgeschreven texten gebruiken wel wat metaforen. Maar verder is alles duidelijk.
+  - "Make sure that button, a, and label element content is unique and descriptive." De twee knoppen zeggen "shop all" en "discover", dit is niet heel duidelijk over wat je nou gaat discoveren. Maar de text boven de knop maakt het dan wel weer wat meer duidelijk.
+  - "Use left-aligned text for left-to-right (LTR) languages, and right-aligned text for right-to-left (RTL) languages." dit klopt
+  - "Validate your HTML." de hamburger button is niet valid, omdat ik hier divjes gebruik voor de lijnen.
+  - "Use a lang attribute on the html element." Ja, die wordt gebruikt
+  - "Provide a unique title for each page or view." Ja dit klopt.
+  - "Ensure that viewport zoom is not disabled." De viewport staat goed
+  - "Use landmark elements to indicate important content regions." Dit wordt goed gedaan
+  - "Ensure a linear content flow." 
+  - "Avoid using the autofocus attribute." klopt
+  - "Allow extending session timeouts." wordt niet gedaan
+  - "Remove title attribute tooltips." de informatie in de title tag is niet extreem belangrijk, het verteld alleen de titel van de site.
+  - "Make sure there is a visible focus style for interactive elements that are navigated to via keyboard input." Het is goed te zien.
+  - "Check to see that keyboard focus order matches the visual layout." Ja, alles is op een goede volgorde
+  - "Remove invisible focusable elements." Er komt geen focus op elementen die het niet horen te hebben.
+  - "Make sure that all img elements have an alt attribute." Ik heb de fotos een duidelijke alt gegeven, dit hadden ze eerst niet.
+  - "Make sure that decorative images use null alt (empty) attribute values." ja
+  - "Provide a text alternative for complex images such as charts, graphs, and maps." Ik heb de fotos een duidelijke alt gegeven, dit hadden ze eerst niet.
+  - "For images containing text, make sure the alt description includes the image's text." er zijn geen foto's met text erop.
+  - "Use heading elements to introduce content." dit wordt goed gedaan.
+  - "Use only one h1 element per page or view." Ik heb 1 h1 element, met text vergeleken met de originele website waar er geen text in staat.
+  - "Heading elements should be written in a logical sequence." klopt
+  - "Don't skip heading levels." klopt
+  - "Use list elements (ol, ul, and dl elements) for list content." klopt
+  - "Use the a element for links." klopt
+  - "Ensure that links are recognizable as links." Niet alle links zijn underlined, bij sommige word hier een pijltje voor gebruikt, maar dat is ook duidelijk.
+  - "Ensure that controls have :focus states." Dit klopt
+  - "Use the button element for buttons." Dit klopt
+  - "Provide a skip link and make sure that it is visible when focused." Dit heb ik gedaan
+  - "Identify links that open in a new tab or window." Er zijn geen links naar een ander tabblad
+  - "Use the table element to describe tabular data." Zijn niet van toepassing
+  - "Use the th element for table headers (with appropriate scope attributes)." Zijn niet van toepassing
+  - "Use the caption element to provide a title for the table." Zijn niet van toepassing
+  - "All inputs in a form are associated with a corresponding label element." Dit klopt
+  - "Use fieldset and legend elements where appropriate." nvt
+  - "Inputs use autocomplete where appropriate." bij email input wordt dit gebruikt.
+  - "Make sure that form input errors are displayed in list above the form after submission." bij email input wordt dit gebruikt.
+  - "Associate input error messaging with the input it corresponds to." Dit heb ik nog niet.
+  - "Make sure that error, warning, and success states are not visually communicated by just color." klopt
+  - "Make sure that media does not autoplay." nvt
+  - "Ensure that media controls use appropriate markup." nvt
+  - "Check to see that all media can be paused." nvt
+  - "Confirm the presence of captions." nvt
+  - "Remove seizure triggers." nvt
+  - "Confirm that transcripts are available." nvt
+  - "Check your content in specialized browsing modes." Dit klopt
+  - "Increase text size to 200%." Het is nog wel leesbaar, maar de letters worden wel heel groot
+  - "Double-check that good proximity between content is maintained." Het is bruikbaar, maar wel wat lastiger
+  - "Make sure color isn't the only way information is conveyed." dit klopt
+  - "Make sure instructions are not visual or audio-only." Dit klopt
+  - "Use a simple, straightforward, and consistent layout." Dit klopt
+  - "Ensure animations are subtle and do not flash too much" nvt
+  - "Provide a mechanism to pause background video." nvt
+  - "Make sure all animation obeys the prefers-reduced-motion media query." nvt
+  - "Check the contrast for all normal-sized text." nvt
+  - "Check the contrast for all large-sized text." goed
+  - "Check the contrast for all icons." goed
+  - "Check the contrast of borders for input elements (text input, radio buttons, checkboxes, etc.)." een beetje dun
+  - "Check text that overlaps images or video." soms wat lastiger leesbaar
+  - "Check custom ::selection colors." goed
+  - "Check that the site can be rotated to any orientation." werkt niet, ik heb niet responsive gewerkt
+  - "Remove horizontal scrolling." goed
+  - "Ensure that button and link icons can be activated with ease." goed
+  - "Ensure sufficient space between interactive items in order to provide a scroll area." goed
 
 </details>
 
