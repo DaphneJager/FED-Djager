@@ -194,6 +194,7 @@ html:has([value="dark"]:checked) .bovenfooter p:last-of-type {
 body {
 	background-color: var(--color-background);
 	overflow: auto;
+	overflow-x: hidden;
 }
 
 li {
@@ -475,7 +476,6 @@ main section:nth-of-type(4) {
 	scroll-snap-align: start;
 	scroll-behavior: smooth;
 	scroll-snap-type: x mandatory;
-
 }
 
 .caroussel article:nth-of-type(1) {
@@ -553,7 +553,6 @@ main section:nth-of-type(4) {
 
 .caroussel2 {
 	display: flex;
-	overflow-x: auto;
 	overflow-x: auto;
 }
 
@@ -704,8 +703,6 @@ footer a {
 .caroussel3 {
 	display: flex;
 	overflow-x: auto;
-	max-width: 100%;
-	box-sizing: border-box;
 }
 
 .caroussel3 h2{
@@ -742,26 +739,8 @@ footer a {
 	scroll-behavior: smooth;
 	align-items: center;
 	scroll-snap-type: x mandatory;
-}
-
-.caroussel3 section:nth-of-type(1) {
-	display: flex;
-	flex-direction: column;
 	margin: 20px 20px 20px 20px;
 }
-
-.caroussel3 section:nth-of-type(2) {
-	display: flex;
-	flex-direction: column;
-	margin: 20px 20px 20px 20px;
-}
-
-.caroussel3 section:nth-of-type(3) {
-	display: flex;
-	flex-direction: column;
-	margin: 20px 20px 20px 20px;
-}
-
 
 /* TEXT P2 */
 
