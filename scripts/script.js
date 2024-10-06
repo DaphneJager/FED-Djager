@@ -3,19 +3,14 @@
 const openButton = document.querySelector ("header > button");
 const deNav = document.querySelector("nav");
 
-const bleachModeButton = document.getElementById("bleachModeButton")
-const bleachmode1 = document.getElementById("bleachmode1")
+// +-knop catalog
+const decreaseBtn = document.getElementById("decreaseBtn");
+const increaseBtn = document.getElementById("increaseBtn");
+const countDisplay = document.getElementById("count");
 
-bleachModeButton.addEventListener("click", toggleBleach)
+// sizeButton
+const sizeButtons = document.querySelectorAll('.size-btn');
 
-// Bleach mode
-function toggleBleach() {
-  bleachmode.classList.toggle("visually_hidden");
-}
-
-function toggleBleach() {
-  bleachmode1.classList.toggle("visually_hidden");
-}
 
 
 // Functie om het menu te openen en te sluiten
@@ -36,8 +31,40 @@ function openMenu() {
   }
 }
 
-openButton.onclick = openMenu;
+// +-knop
 
+// Beginwaarde
+let count = 1;
+countDisplay.textContent = count;
+
+// Functie om de waarde te verlagen
+function decreaseCount() {
+  if (count > 0) { // Zorg ervoor dat de waarde niet onder de 0 komt
+    count--;
+    countDisplay.textContent = count;
+}
+}
+
+// Functie om de waarde te verhogen
+function increaseCount() {
+    count++;
+    countDisplay.textContent = count;
+}
+
+// sizeButton
+sizeButtons.forEach(button => {
+  button.addEventListener('click', () => {
+      // Verwijder de 'selected' class van alle knoppen
+      sizeButtons.forEach(btn => btn.classList.remove('selected'));
+      // Voeg de 'selected' class toe aan de geklikte knop
+      button.classList.add('selected');
+  });
+});
+
+// eventlisteners
+openButton.onclick = openMenu;
+decreaseBtn.addEventListener("click", decreaseCount);
+increaseBtn.addEventListener("click", increaseCount);
 
 
 

@@ -17,13 +17,9 @@
 		 <input type="radio" name="theme" value="dark"> donker
 	 </label>
 
-	 <button id="bleachModeButton"> bleach mode </button>
-
 	<a class="skip-to-content-link" href="#main">
 		Skip to content
 	</a>
-
-	<div id="bleachmode1" class="visually_hidden"></div>
 
     <section class="boventext">
 		<h1>Art. Not just clothing.</h1>
@@ -93,20 +89,25 @@
 		</section>
 
 		<section class="sizes">
-			<h2>Size</h2>
-			<button>XS (shoulder: 46cm | Length: 64cm)</button>
-			<button>S (shoulder: 47.5cm | Length: 66cm)</button>
-			<button>M (shoulder: 49cm | Length: 68cm)</button>
-			<button>L (shoulder: 51cm | Length: 70cm)</button>
-			<button>XL (shoulder: 53cm | Length: 72cm)</button>
-			<button>XXL (shoulder: 54.5cm | Length: 74cm)</button>
+			<button class="size-btn selected">XS (shoulder: 46cm | Length: 64cm)</button>
+			<button class="size-btn">S (shoulder: 47.5cm | Length: 66cm)</button>
+			<button class="size-btn">M (shoulder: 49cm | Length: 68cm)</button>
+			<button class="size-btn">L (shoulder: 51cm | Length: 70cm)</button>
+			<button class="size-btn">XL (shoulder: 53cm | Length: 72cm)</button>
+			<button class="size-btn">XXL (shoulder: 54.5cm | Length: 74cm)</button>
 		</section>
 
 		<section class="kopen">
 			<h2>Quantity</h2>
-			<button>-	1	+</button>
-			<button>Add to cart</button>
-			<button>Buy with ShopPay</button>
+			<div class="plusmin">
+				<button id="decreaseBtn">-</button>
+				<span id="count">1</span>
+				<button id="increaseBtn">+</button>
+			</div>
+			<div class="cart">
+				<button>Add to cart</button>
+				<button>Buy with ShopPay</button>
+			</div>
 			<a href="#">More payment options</a>
 			<p>Pickup available at atelier</p>
 			<p>Usually available in 5+ days</p>

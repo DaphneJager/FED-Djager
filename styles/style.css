@@ -17,7 +17,6 @@
 /* CUSTOM PROPERTIES */
 /*********************/
 :root {
-	color-scheme: light dark bleachmode;
 	--color-text-dark: white;
 	--color-text-light: black;
 	--color-background-dark: black;
@@ -157,34 +156,6 @@ html:has([value="dark"]:checked) .bovenfooter p:last-of-type {
 	color: var(--color-text-light);
 }
 
-/* BLEACH MODE bron: Thomas*/
-#bleachmode {
-	position: absolute;
-	width: 100%;
-	height: 686%;
-	background-color: white;
-	z-index: 8000;
-}
-
-#bleachmode1 {
-	position: absolute;
-	width: 100%;
-	height: 443%;
-	background-color: white;
-	z-index: 8000;
-}
-
-.visually_hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-}
-
-
 
 	
 /****************/
@@ -287,7 +258,7 @@ nav {
 	z-index: 1000;
 	translate: -100% 0%;
 	transition: translate .3s, visibility .3s;
-	margin-top: 14rem;
+	margin-top: 11rem;
 	visibility: hidden;
 }
 
@@ -740,34 +711,30 @@ footer a {
 	margin: 20px 20px 20px 20px;
 }
 
-.catalogpage h1 {
+.catalogpage h1, h2 {
 	text-align: start;
 	margin: 20px 20px 20px 20px;
 }
 
-.catalogpage h2 {
+/* .catalogpage h2 {
 	text-align: start;
 	margin: 20px 20px 20px 20px;
-}
+} */
 
-.catalogpage {
-	padding-bottom: 50px;
-}
 
 
 /* MATEN */
 
 button {
-	padding: 5px 10px 5px 10px;
 	border-radius: 30px;
 	background-color: var(--primary-color);
-	font-size: 18px;
+	font-size: 15px;
 	border: solid 1px;
 	margin: 5px;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
 	font-family: 'Times New Roman', Times, serif;
 }
 
@@ -777,10 +744,26 @@ button {
 	margin-bottom: 15px;
 }
 
-.sizes button:nth-of-type(1) {
-	filter: invert(100);
+.size-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
 }
 
+.size-btn.selected {
+    background-color: black;
+    color: white;
+}
+
+/* .sizes button:nth-of-type(1) {
+	filter: invert(100);
+} */
+
+
+/* add to cart */
 .kopen h2 {
 	font-size: 15px;
 	font-weight: 100;
@@ -792,28 +775,35 @@ button {
 	flex-direction: column;
 }
 
-.kopen button:nth-of-type(1) {
+#count {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.plusmin {
+	display: flex;
+    align-items: center;
+}
+
+.plusmin button{
+	padding: 10px;
+    font-size: 16px;
+	border-radius: 0;
+}
+
+.cart button:nth-of-type(1) {
 	border-radius: 0;
 	padding: 15px;
 	margin: 5px 5px 15px 5px;
 	border: solid 1px;
-	max-width: 180px;
 	display: flex;
 	justify-content: space-evenly;
 	font-size: 20px;
 	font-weight: 50;
+	width: 100%;
 }
 
-.kopen button:nth-of-type(2) {
-	border-radius: 0;
-	padding-left: 4rem;
-	padding-right: 4rem;
-	margin: 5px;
-	padding: 15px;
-	border: solid 1px;
-}
-
-.kopen button:nth-of-type(3) {
+.cart button:nth-of-type(2) {
 	background-color: #4219d4;
 	border-radius: 0;
 	border-color: #4219d4;
@@ -823,7 +813,10 @@ button {
 	margin: 5px;
 	padding: 15px;
 	border: none;
+	width: 100%;
 }
+
+
 
 .kopen p:nth-of-type(2) {
 	margin-top: 1em;
