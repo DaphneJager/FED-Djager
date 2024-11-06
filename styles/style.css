@@ -716,14 +716,9 @@ footer a {
 	margin: 20px 20px 20px 20px;
 }
 
-/* .catalogpage h2 {
-	text-align: start;
-	margin: 20px 20px 20px 20px;
-} */
 
 
-
-/* MATEN */
+/* MATEN bron: https://stackoverflow.com/questions/52707480/html-button-selected-by-default */
 
 button {
 	border-radius: 30px;

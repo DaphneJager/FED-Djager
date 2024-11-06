@@ -375,5 +375,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   5. inputfield opmaak: https://www.w3schools.com/css/css_form.asp
   6. dat alle plaatjes even groot zijn in caroussel bron: chatgpt vraag: Mijn Html is: *kopie van mijn html caroussel 2*
  Mijn css is: *kopie van mijn css caroussel2*  Het 3de plaatje in de caroussel is kleiner dan de rest. hoe fix ik dit */
+  7. maten knoppen: https://stackoverflow.com/questions/52707480/html-button-selected-by-default
 
 </details>
