@@ -28,16 +28,106 @@
 
 /* LIGHT */
 
-html:has([value="light"]:checked) {
+html:has([value="light"]:checked) .mainimage h2 {
 	color-scheme: light;
+	color: var(--color-text-dark);
 }
-
+html:has([value="light"]:checked) .stickimage h2 {
+	color-scheme: light;
+	color: var(--color-text-dark);
+}
+html:has([value="light"]:checked) .stickimage p {
+	color-scheme: light;
+	color: var(--color-text-dark);
+}
+html:has([value="light"]:checked) nav {
+	color-scheme: light;
+	background-color: var(--color-background-light);
+}
+html:has([value="light"]:checked) .knop1 {
+	color-scheme: light;
+	background-color: var(--color-background-light);
+}
+html:has([value="light"]:checked) .knop2 {
+	color-scheme: light;
+	background-color: var(--color-background-light);
+}
 /* DARK */
 
 html:has([value="dark"]:checked) {
 	color-scheme: dark;
 }
 
+html:has([value="dark"]:checked) header img {
+	color-scheme: dark;
+	filter: invert(100);
+}
+html:has([value="dark"]:checked) .bleached article{
+	color-scheme: dark;
+	background-color: var(--backgroundcolorarticle-dark);
+}
+html:has([value="dark"]:checked) .kopen img {
+	color-scheme: dark;
+	filter: invert(100);
+}
+html:has([value="dark"]:checked) footer img {
+	color-scheme: dark;
+	filter: invert(100);
+}
+html:has([value="dark"]:checked) .bovenfooter img {
+	color-scheme: dark;
+	filter: invert(100);
+}
+html:has([value="dark"]:checked) button {
+	color-scheme: dark;
+	background-color: transparent;
+	color: var(--color-text-dark);
+}
+html:has([value="dark"]:checked) button:nth-of-type(1) {
+	color-scheme: dark;
+	background-color: transparent;
+	color: var(--color-text-dark);
+	filter: invert(0);
+}
+html:has([value="dark"]:checked) .bar1 {
+	color-scheme: dark;
+	background-color: var(--color-background-light);
+}
+html:has([value="dark"]:checked) .bar2 {
+	color-scheme: dark;
+	background-color: var(--color-background-light);
+}
+html:has([value="dark"]:checked) .bar3 {
+	color-scheme: dark;
+	background-color: var(--color-background-light);
+}
+html:has([value="dark"]:checked) .kopen button:nth-of-type(3) {
+	color-scheme: dark;
+	background-color: #4219d4;
+	color: var(--color-text-dark);
+}
+html:has([value="dark"]:checked) nav {
+	color-scheme: dark;
+	background-color: var(--color-background-dark);
+}
+html:has([value="dark"]:checked) .knop1 {
+	color-scheme: dark;
+	background-color: var(--color-background-dark);
+}
+html:has([value="dark"]:checked) .knop2 {
+	color-scheme: dark;
+	background-color: var(--color-background-dark);
+}
+html:has([value="dark"]:checked) .sizes button:nth-of-type(1) {
+	color-scheme: dark;
+	background-color: var(--color-background-light);
+	color: var(--color-text-light);
+	border-color: var(--color-background-light);
+}
+html:has([value="dark"]:checked) .bovenfooter p:last-of-type {
+	color-scheme: dark;
+	color: var(--color-text-light);
+}
 
 	
 /****************/
