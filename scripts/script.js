@@ -60,6 +60,7 @@ sizeButtons.forEach(button => {
   });
 });
 
+
 // eventlisteners
 openButton.onclick = openMenu;
 decreaseBtn.addEventListener("click", decreaseCount);
